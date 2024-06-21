@@ -1,6 +1,7 @@
 
 
 
+var apiEndpoint = 'https://api.aladhan.com/v1/hijriCalendarByCity/2024/6?city=Cairo&country=Egypt&latitude=30.033&longitude=31.233&month=6&year=2024&method=5&timezonestring=Africa%2FCairo';
 
 
 document.getElementById("getPrayerTimes").addEventListener("click" , ()=>{
@@ -12,7 +13,7 @@ document.getElementById("getPrayerTimes").addEventListener("click" , ()=>{
   const inputcountry = document.getElementById("country").value || "Egypt"
   document.querySelectorAll(".saad, .aml , .amira " ).forEach(el => el.remove());
 
-axios.get("http://api.aladhan.com/v1/hijriCalendarByCity/2024/6", {
+axios.get(apiEndpoint, {
   params: {
     "city" : inputcity ,
     "country" : inputcountry,
@@ -85,7 +86,7 @@ divedate.classList.add("amira")
 
 
 
-axios.get("http://api.aladhan.com/v1/hijriCalendarByCity/2024/6", {
+axios.get(apiEndpoint, {
   params: {
     "city" : "Cairo" ,
     "country" : "Egypt",
