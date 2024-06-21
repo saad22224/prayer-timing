@@ -13,7 +13,7 @@ document.getElementById("getPrayerTimes").addEventListener("click" , ()=>{
   const inputcountry = document.getElementById("country").value || "Egypt"
   document.querySelectorAll(".saad, .aml , .amira " ).forEach(el => el.remove());
 
-axios.get(apiEndpoint, {
+axios.get("https://api.aladhan.com/v1/hijriCalendarByCity/2024/6", {
   params: {
     "city" : inputcity ,
     "country" : inputcountry,
@@ -86,7 +86,7 @@ divedate.classList.add("amira")
 
 
 
-axios.get(apiEndpoint, {
+axios.get("https://api.aladhan.com/v1/hijriCalendarByCity/2024/6", {
   params: {
     "city" : "Cairo" ,
     "country" : "Egypt",
