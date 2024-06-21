@@ -1,0 +1,104 @@
+.clock {
+  font-size: 2em;
+  margin: 20px;
+  /* Optional: center the clock */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: blue;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:#ec6724 ; /* Light gray background */
+  color: #333; /* Dark text color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+h1 {
+  color: #ffc107; /* Yellow */
+  padding-top: 20px;
+  
+}
+
+button {
+  background-color: #ffc107; /* Yellow */
+  color: #000; /* Black text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ffeeb9; /* Lighter shade of yellow on hover */
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 15px;
+   border: none;
+   outline: none;
+  
+}
+
+.saad {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:#DB5E86; /* Dark background for prayer timings */
+  color: #fff; /* White text */
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.saad p {
+  margin: 10px 0;
+}
+
+.amira,
+.aml {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffc107; /* Yellow */
+}
+
+.amira {
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .clock{
+    font-size: 1em;
+    margin: 20px;
+    /* Optional: center the clock */
+    position: fixed;
+    top: 5px;
+    left: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  input[type="text"],
+  .saad {
+    width: 90%;
+    max-width: none;
+  }
+  
+}
+@media (max-width: 400px) {
+  /* Further adjustments for very small screens */
+  input[type="text"],
+  .saad {
+    width: 100%;
+  }
+}
